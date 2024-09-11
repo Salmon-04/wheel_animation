@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-color: #6657f4;
+    --second-color: #ffffff; 
+    --black-color: #000000;
+}
+body{
+    background: #fff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.blok{
+    position: relative;
+    width: 450px;
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 2px rgb(0 0 0 / 40%);
+}
+
+.login{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 210px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+}
+.login span{
+    font-size: 30px;
+    color: var(--black-color);
+}
+.login::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px; 
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 var(--primary-color);
+}
+.login::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px; 
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 var(--primary-color);
+}
+
+.input_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.input-field {
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    background: transparent;
+    color: #000000;
+    padding-inline: 20px 50px;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    outline: none;
+}
+#user{
+    margin-bottom: 10px;
+}
+.label {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: .2s ease-in-out;
+}
+.input-field:focus ~ .label,
+.input-field:valid ~ .label{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    color: black;
+    padding: 0 10px;
+}
+.icon {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 20px;
+}
+
+/* СТИЛЬ КНОПКА */
+
+.input-submit {
+    width: 70%;
+    height: 50px;
+    margin-left: 60px;
+    background: #6657f4;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.button{
+    font: inherit;
+    background-color: #f0f0f0;
+    border: 0;
+    border-radius: 0.5em;
+    font-size: 25px;
+    padding: 0.375em 1em;
+    font-weight: 600;
+    text-shadow: 0 0.0625em 0 #fff;
+    box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+   transition: 0.15s ease;
+   cursor: pointer;
+}
+
+.button:hover{
+    color: blue;
+    text-shadow: 0 0.0625em 0 red, 0 0 20px blue;
+}
+
+.button:active{
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    text-shadow: 0 0.0625em 0 yellow;
+    translate: 0 0.225em;
+    box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+    cursor: pointer;
+}
+
+

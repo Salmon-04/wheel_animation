@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/registration.css">
+    <style>
+        #demo{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .home{
+            width: 100px;
+            height: 30px;
+            font-size: 18px;
+            background-color: #fff;
+            border-color: #6657f4;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .home:hover{
+            background-color: #6657f4;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blok">
+            <div class="login">
+                <span>Авторизация</span>
+            </div>
+            <div class="input_box">
+                <input type="text" placeholder="Город, улица, дом" id="user" class="input-field">
+                <label for="user" class="label">Введите адрес</label>
+                <i class="bx bx-user icon"></i>
+            </div>
+            <div class="input_box">
+                <input type="tel" placeholder="+992 00 000 0000" id="pass" class="input-field">
+                <label for="pass" class="label">Номер телефон</label>
+                <i class="bx bx-lock-alt icon"></i>
+            </div>
+            <div id="demo">Нажмите на кнопку, чтобы заказать духи</div>
+            <div class="input_box">
+                <input type="submit" id="myButton" class="input-submit button" value="Отправить">
+            </div>
+            <a href="glavnaya.html"><button class="home">Главная</button></a>
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>
